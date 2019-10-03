@@ -1,0 +1,44 @@
+{
+	"name": "myCsvData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_store",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Movies.csv",
+				"container": "peti"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "MovieId",
+				"type": "String"
+			},
+			{
+				"name": " Title",
+				"type": "String"
+			},
+			{
+				"name": " Cast",
+				"type": "String"
+			},
+			{
+				"name": " Type",
+				"type": "String"
+			},
+			{
+				"name": " Price",
+				"type": "String"
+			}
+		]
+	}
+}
